@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculadora{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 50rem;
+  width: 33rem;
+  border: 2px solid;
+  padding: 1rem;
+}
+
+.botoes{
+  position: relatice;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: dense;
+}
+
+button{
+  padding: 3rem;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.visor{
+  height: 10rem;
+  width: 100%;
+  border: 2px solid;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.acumulador{
+  height: 50%;
+  width: 100%;
+  font-size: 3rem;
+  text-align: right;
+}
+
+.total{
+  height: 50%;
+  width: 100%;
+  font-size: 4rem;
+  text-align: right;
+  padding: 0 1rem;
+}
