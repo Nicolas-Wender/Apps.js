@@ -14,25 +14,25 @@
         <div id="total" class="total"></div>
       </div>
       <div class="botoes">
-        <button>C</button>
-        <button>CE</button>
-        <button>%</button>
-        <button>/</button>
-        <button onclick="adicionarNum(7)" >7</button>
-        <button onclick="adicionarNum(8)" >8</button>
-        <button onclick="adicionarNum(9)" >9</button>
-        <button>X</button>
-        <button onclick="adicionarNum(4)" >4</button>
-        <button onclick="adicionarNum(5)" >5</button>
-        <button onclick="adicionarNum(6)" >6</button>
-        <button>-</button>
-        <button onclick="adicionarNum(1)" >1</button>
-        <button onclick="adicionarNum(2)" >2</button>
-        <button onclick="adicionarNum(3)" >3</button>
-        <button>+</button>
-        <button class="zero">0</button>
-        <button>.</button>
-        <button>=</button>
+        <button onclick="limparTudo()">C</button>
+        <button onclick="limpar()">CE</button>
+        <button onclick="voltar('total')">&#9003</button>
+        <button onclick="addOperador('/')">/</button>
+        <button onclick="adicionarElemento('1')" >1</button>
+        <button onclick="adicionarElemento('2')" >2</button>
+        <button onclick="adicionarElemento('3')" >3</button>
+        <button onclick="addOperador('*')">X</button>
+        <button onclick="adicionarElemento('4')" >4</button>
+        <button onclick="adicionarElemento('5')" >5</button>
+        <button onclick="adicionarElemento('6')" >6</button>
+        <button onclick="addOperador('+')">+</button>
+        <button onclick="adicionarElemento('7')" >7</button>
+        <button onclick="adicionarElemento('8')" >8</button>
+        <button onclick="adicionarElemento('9')" >9</button>
+        <button onclick="addOperador('-')">-</button>
+        <button onclick="adicionarElemento('0')" class="zero">0</button>
+        <button onclick="adicionarElemento('.')">.</button>
+        <button onclick="calcular()">=</button>
       </div>
     </div>
   </body>
