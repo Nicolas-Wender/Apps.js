@@ -21,23 +21,21 @@
       </div>
       <section class="container">
         <div class="image">
-          <img src="images/4b7b91fdff8a6d68c79671b133cc3956.jpg" alt="" />
+          <img id="img" src="images/4b7b91fdff8a6d68c79671b133cc3956.jpg" alt="imagem da pessoa" />
         </div>
         <div class="title-container">
-          <h1>Susan Smith</h1>
-          <h2>WEB DEVELOPER</h2>
+          <h1 id="name">Susan Smith</h1>
+          <h2 id="job">WEB DEVELOPER</h2>
         </div>
-        <p>
-          A expressão Lorem ipsum em design gráfico e editoração é um texto
-          padrão em latim utilizado na produção gráfica para preencher os
-          espaços de texto em publicações para testar e ajustar aspectos visuais
+        <p id="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nunc ac magna volutpat porttitor. Fusce ut elit a erat sagittis euismod. Nulla in arcu scelerisque, congue nibh ac, dapibus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
         </p>
         <div class="buttons">
           <div class="next-previous">
-            <button><div></div></button>
-            <button><div></div></button>
+            <button onclick="previus()"><div></div></button>
+            <button onclick="next()"><div></div></button>
           </div>
-          <button>Me surpreenda</button>
+          <button onclick="surprise()">Me surpreenda</button>
         </div>
       </section>
     </main>

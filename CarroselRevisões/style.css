@@ -45,17 +45,21 @@ main{
 
 .image{
   overflow: hidden;
-  height: 17rem;
-  width: 17rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image img{
-  width: 100%;
-  height: auto;
+  width: 120%;
+  height: 70%;
+  
 }
+
 
 .title-container{
   display: flex;
