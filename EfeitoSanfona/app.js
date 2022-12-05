@@ -5,6 +5,6 @@ questions.forEach(function (question) {
   
   btn.addEventListener('click', function () {
     question.classList.toggle("show-text");
-    
+
   })
 })
