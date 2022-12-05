@@ -86,13 +86,23 @@ const filterBtns = document.querySelectorAll('.button')
 
 window.addEventListener('DOMContentLoaded', () => {
   displayMenu(menu)
-  filteritems()
+  filteritems(menu)
 })
 
-function filteritems() {
+function filteritems(menu) {
   filterBtns.forEach(btn => {
     btn.addEventListener('click', e => {
-      console.log(e.currentTarget.dataset.id)
+      const category = e.currentTarget.dataset.id
+      const menuCategory = menu.filter(menuItem => {
+        if (menuItem.category == category) {
+          return menuItem
+        }
+      })
+      if (category === 'all') {
+        displayMenu(menu)
+      } else {
+        displayMenu(menuCategory)
+      }
     })
   })
 }
